@@ -7,8 +7,8 @@ int main () {
 	int c;
 
 	//actual initialization
-	a=20;
-	b=30;
+	a=10;
+	b=20;
 	c=a+b;
 
 	cout << c;
