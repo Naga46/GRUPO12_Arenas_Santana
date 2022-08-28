@@ -7,7 +7,7 @@ int main () {
 	int c;
 
 	//actual initialization
-	a=10;
+	a=20;
 	b=30;
 	c=a+b;
 
