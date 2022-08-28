@@ -8,7 +8,7 @@ int main () {
 
 	//actual initialization
 	a=10;
-	b=20;
+	b=30;
 	c=a+b;
 
 	cout << c;
