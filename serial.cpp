@@ -1,22 +1,9 @@
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
+void setup() {
+  Serial.begin(115200);
+  
+}
 
-#include <wiringSerial.h>
-
-int main ()
-{
-  int fd ;
-
-  if ((fd = serialOpen ("/dev/ttyACM0", 115200)) < 0)
-  {
-    fprintf (stderr, "Unable to open serial device: %s\n", strerror (errno)) ;
-    return 1 ;
-  }
-
-  for (;;)
-  {
-    putchar (serialGetchar (fd)) ;
-    fflush (stdout) ;
-  }
+void loop() {
+  Serial.println("HOLA MUNDO");
+  delay(1000);
 }
