@@ -30,7 +30,7 @@ def handle_client(conn, addr):
             msg_length = int(msg_length)
             msg = conn.recv(msg_length).decode(FORMAT)
 
-            if msg == MAC and MAC != ("80:91:33:c2:34:f3") :
+            if msg == MAC and MAC != ("80:91:33:c2:34:f4") :
                 conn.send("MAC no Valida".encode(FORMAT))
                 msg = DISCONNECT_MESSAGE
           
